@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Amoera";
+  src: url("../assets/fonts/amoera-personal-use-only.otf") format("opentype"); /* Imported Web Safe fonts from CDN */
+}
+#welcome-text-subtitle,#countdown-timer{
+  font-family: 'Urbanist', sans-serif;
+}
+#quiz-intro{
+  font-family: "Amoera", sans-serif;
+}
+#welcome-text{
+  font-family: "Amoera", sans-serif;
+  letter-spacing: 3px;
+}
+#main-btn{
+  background-color: #c02d2d;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+#main-btn:hover{
+  letter-spacing: 3px;
+  transform: scale(1.1);
+}
+#main-btn:active{
+  transform: translateY(10px);
+}
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cards,
+#timeline-journey {
+  background: linear-gradient(to bottom, rgb(253, 252, 252), white, #c02d2d);
+  font-family: 'Urbanist', sans-serif;
+}
+.carousel-item img {
+  height: 275px;
+  object-fit: cover;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.testimonial-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial-card img {
+  width: 100px;
+}
+#testimonial-header{
+  color: #ffffff;
+  text-shadow: 3px 1px black;
+}
+#testimonial-card1{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#testimonial-card2{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.blockquote {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px black;
+}
+.blockquote-footer {
+  font-size: 1rem;
+  color: #ececec;
+}
+#testimonial-section{
+  background: url('../img/red-bg.jpg') no-repeat center center/cover fixed ; /*Image taken from FreePik (Royalty-free Stock Images)*/
+}
+.timeline {
+  max-width: 1000px;
+}
+.timeline-item {
+  overflow: hidden;
+}
+.timeline-title {
+  font-size: 24px;
+}
+.timeline-text {
+  font-size: 18px;
+}
+/* All Timeline Images were taken from SP Website (https://www.sp.edu.sg) */
+.timeline-item-1954 {
+  background: url('https://www.sp.edu.sg/images/default-source/abe/sp70-banner-new-old-sp.jpg?Status=Master&sfvrsn=9bfa44b7_1') no-repeat right center/cover;
+}
+.timeline-item-1970 {
+  background: url('https://www.roots.gov.sg/CollectionImages/1193368.jpg') no-repeat right center/cover;
+}
+.timeline-item-2015 {
+  background: url('https://www.sp.edu.sg/images/default-source/abe/02_about-abe/web_abe_facilities-banner.jpg?sfvrsn=9964650b_0') no-repeat right center/cover;
+}
+.timeline-item-future {
+  background: url('https://www.sp.edu.sg/images/default-source/sp-industry/spi-pic.jpg') no-repeat right center/cover;
+}
+/* Timeline Styling */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); 
+}
+.card, .timeline-item {
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.card.visible, .timeline-item.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.merchandise-img {
+  height: 300px;
+  object-fit: cover;
+}

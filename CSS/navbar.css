@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Margesh";
+  src: url("../assets/fonts/Margesh-BF654d9b2e77876.otf") format("opentype"); /* Imported WebSafe Fonts from CDN */
+}
+.nav-link {
+  font-family: "Margesh", sans-serif;
+}
+/* Navbar red-underline effect styles */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #c02d2d;
+  height: 3px;
+  width: 0;
+  left: 2px;
+  bottom: -1.5px;
+  transition: all 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.celebration-strip {
+  background-color: #c02d2d;
+  color: #faeda4;
+  font-family: "Margesh", sans-serif;
+}
+#footerlink1,#footerlink2,#footerlink3,#footerlink4 {
+  font-family: 'Urbanist', sans-serif;                 
+}
+.footer-copyright-wrapper,.credits{
+  font-family: "Comfortaa", sans-serif;
+}
+/* Linear gradient on Active Nav Link */
+.nav-link.active {
+  background: linear-gradient(108deg, rgb(204, 204, 31) 0.5%, rgb(214, 4, 4) 29.8%, rgb(241, 57, 221) 59.9%, rgb(95, 11, 228) 84.2%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+}

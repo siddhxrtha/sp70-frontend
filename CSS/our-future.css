@@ -1,0 +1,53 @@
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* Carousel Styling */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Urbanist";
+}
+.carousel-caption h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/* Table Styling */
+.table {
+  font-family: "Quicksand";
+  border-collapse: separate; 
+  border-spacing: 0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+}
+.table th, .table td {
+  text-align: left; 
+  border-bottom: 1px solid #dee2e6; 
+}
+.table-bordered {
+  border: none; 
+}
+.table-bordered td, .table-bordered th {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #fff; 
+  background-color: #c02d2d; 
+}
+.hero-section{
+  font-family: "Quicksand", sans-serif;
+  text-shadow: #000000 1px 2px;                                             
+  background: url('../img/red-bg.jpg') no-repeat center center/cover fixed ;; /* Image taken from FreePik (Royalty-free Stock Images) */
+  height: 280px;
+}
+.small-video{
+  max-width: 600px;
+}
+.carousel-control-next,
+.carousel-control-prev{
+  opacity: 1;
+}
+
