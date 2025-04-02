@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.cdnfonts.com/css/urbanist" rel="stylesheet"> 
+  <link rel="stylesheet" href="CSS/our-future.css" />
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="shortcut icon" href="img/SP-Favicon.png" type="image/x-icon" />
+  <script src="JS/future.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <title>SP70 | Our Future</title>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/sp-70-logo.png" alt=" SP-Logo" height="60" />
+      <!-- Image taken from SP Website -->
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active position-relative" href="our-future.html">Our Future</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="form.html">SP70 Wishes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Celebratory Strip -->
+<div class="celebration-strip text-center py-2">
+  <em>Celebrating Our 70th Anniversary!</em>
+</div>
+<!-- Hero -->
+<div class="hero-section d-flex align-items-center justify-content-center text-center py-4">
+  <div class="container text-white">
+    <h1 class="display-3 ">Shaping the Future of Education</h1>
+    <p class="lead">Explore Singapore Polytechnic’s vision for the next decade, including innovative programs, sustainable practices, and global partnerships.</p>
+  </div>
+</div>
+<!-- Future Plans -->
+<section id="future-plans" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" id="opening-text">Our Vision For The Future</h2>
+    <div class="row">
+      <!-- Plan 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <!-- Pic Taken From SP Website -->
+          <img src="https://www.sp.edu.sg/images/default-source/eee/spes/2019/image25d33dcdad8b64cd090d47748ffbec18c.jpg?sfvrsn=3a5830b_0" class="card-img-top" alt="Pic Of Innovative Learning Methods In SP.">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">Innovative Learning Methods</h5>
+              <p class="card-text">We are introducing cutting-edge technologies and new teaching methodologies to enhance the learning experience and prepare students for the future.</p>
+            </div>
+            <button type="button" class="btn btn-outline-danger mt-3 align-self-center" data-bs-toggle="modal" data-bs-target="#innovationModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Plan 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <!-- Pic Taken From SP Website -->
+          <img src="https://www.sp.edu.sg/images/default-source/content-migration/content-migration/1-trrbpmpf3435939224713787196.jpg?Status=Master&sfvrsn=f8cbb981_0" class="card-img-top" alt="Sustainability">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">Sustainable Campus Initiatives</h5>
+              <p class="card-text">Our commitment to sustainability is reflected in our new green campus initiatives, aiming to reduce our carbon footprint and promote environmental stewardship.</p>
+            </div>
+            <button type="button" class="btn btn-outline-danger mt-3 align-self-center" data-bs-toggle="modal" data-bs-target="#sustainabilityModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Plan 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <!-- Pic Taken From SP Website -->
+          <img src="https://www.sp.edu.sg/images/default-source/mae/spii2024/mae-photos/FS4_5156-reduced.jpg" class="card-img-top" alt="Pic Of Global Partnerships">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">Global Partnerships</h5>
+              <p class="card-text">We are expanding our global network of partnerships to offer students diverse opportunities for international exposure and collaborative research.</p>
+            </div>
+            <button type="button" class="btn btn-outline-danger mt-3 align-self-center" data-bs-toggle="modal" data-bs-target="#partnershipsModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Innovative Learning Methods -->
+<div class="modal fade" id="innovationModal" tabindex="-1" aria-labelledby="innovationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="innovationModalLabel">Innovative Learning Methods</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Pic Taken From SP Website -->
+        <img src="img/innovative-learning-methods-modal.jpg" class="img-fluid mb-3 rounded-3" alt="Innovation">
+        <h3><em>Revolutionizing Learning with SP70: Embrace the Future of Education</em></h3>
+        <p>Discover how SP70 is transforming education with cutting-edge learning methods. By integrating advanced technologies and innovative teaching strategies, we’re redefining the learning experience and preparing students for the future. Explore our dynamic, tech-driven approach that makes learning more engaging, personalized, and impactful.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Sustainable Campus Initiatives -->
+<div class="modal fade" id="sustainabilityModal" tabindex="-1" aria-labelledby="sustainabilityModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sustainabilityModalLabel">Sustainable Campus Initiatives</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Pic Taken From CNA Article -->
+        <img src="img/sp-sustainability-modal.jpg" class="img-fluid mb-3 rounded-3" alt="Sustainability">
+        <h3><em>Green & Clean Initiatives</em></h3>
+        <p>Our commitment to sustainability shines through our green campus initiatives, which focus on reducing our carbon footprint and enhancing environmental stewardship. By incorporating energy-efficient technologies, renewable energy sources, and advanced waste management systems, we are not only minimizing our environmental impact but also fostering a culture of sustainability. These efforts reflect our dedication to creating a more eco-friendly and responsible campus community.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Global Partnerships -->
+<div class="modal fade" id="partnershipsModal" tabindex="-1" aria-labelledby="partnershipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="partnershipsModalLabel">Global Partnerships</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Pic Taken From SP MAE page -->
+        <img src="https://www.sp.edu.sg/images/default-source/mae/spii2024/mae-photos/FS4_5156-reduced.jpg" class="img-fluid mb-3 rounded-3" alt="Global Partnerships">
+        <h3><em>Expanding Global Network of Collaborations</em></h3>
+        <p>
+          We're broadening our international partnerships to enhance academic and research opportunities. Through strategic alliances with top universities and research centers, we offer students and faculty unique exchange programs, collaborative research projects, and global networking events. This expansion enriches our educational experience and opens doors to global career prospects.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Statistics Section -->
+<section id="statistics" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Impact By Numbers</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="counter">
+          <span class="count text-danger display-4" data-target="10000">0</span>
+          <p>Students Enrolled</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="counter">
+          <span class="count text-danger display-4" data-target="500">0</span>
+          <p>Faculty Members</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="counter">
+          <span class="count text-danger display-4" data-target="70">0</span>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Achievements -->
+<section id="achievements" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Recent Achievements</h2>
+    <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Achievement Page 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+                <img src="img/award.jpg" class="card-img-top" alt="Pic Of Award Ceremony">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title">International Awards</h5>
+                    <p class="card-text">Singapore Polytechnic has been recognized internationally for its outstanding educational practices and innovative research projects.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <!-- Image taken from SP website (EEE Page) -->
+                <img src="https://www.sp.edu.sg/images/default-source/eee/spes/2019/image3d8763800d0fe4ba0bb2fc6d57a358a2f.jpg?sfvrsn=91a4f071_0" class="card-img-top" alt="Picture Of Community In SP">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title">Community Impact</h5>
+                    <p class="card-text">Our community engagement programs have made significant positive impacts, including support for local startups and outreach initiatives.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <!-- Image taken from SP website -->
+                <img src="img/technology.jpg" class="card-img-top" alt="Picture Of Technological Advancements In SP">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title">Technological Advancements</h5>
+                    <p class="card-text">We have successfully integrated advanced technologies into our curriculum, equipping students with the necessary skills.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Achievement Page 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <!-- Image taken from SP Website (CLS Page) -->
+                <img src="https://www.sp.edu.sg/images/default-source/cls/cls-courses/dpcsae81baa3e70a4817b30db415ed542c2e.jpg?sfvrsn=e16fced4_4" class="card-img-top" alt="Research">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title">Research Excellence</h5>
+                    <p class="card-text">Our research teams have achieved excellence in various fields, contributing to advancements in technology and industry practices.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <!-- Image taken from SP Website -->
+                <img src="https://www.sp.edu.sg/images/default-source/default-album/sp-and-jtc-corporation-inked-an-mou-to-drive-tech-adoption-and-train-students-in-manufacturing_img1.jpg?sfvrsn=dc4b8356_0" class="card-img-top" alt="Innovation">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title">Innovation and Entrepreneurship</h5>
+                    <p class="card-text">We foster a culture of innovation and entrepreneurship, encouraging students and faculty to develop creative solutions to real-world problems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                <!-- Image taken from tendergardener.com -->
+                <img src="https://tendergardener.com/wp-content/uploads/2014/07/P1220609.jpg" class="card-img-top" alt="Sustainability">
+                <div class="card-body d-flex flex-column">
+                  <div>
+                    <h5 class="card-title">Sustainability Initiatives</h5>
+                    <p class="card-text">We are committed to sustainability, implementing green practices and promoting environmental awareness across our campus and community.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="prev">
+        <span aria-hidden="true">
+          <i class="bi bi-arrow-left text-danger bg-white px-3 py-4 rounded-3"></i>
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="next">
+        <span aria-hidden="true">
+          <i class="bi bi-arrow-right text-danger bg-white px-3 py-4 rounded-3"></i>
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Impact & Testimonials -->
+<section id="impact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Impact & Testimonials</h2>
+    <div id="impactCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#impactCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#impactCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#impactCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <!-- Image taken from SP Website (First Steps @ SP Page) -->
+          <img src="https://www.sp.edu.sg/images/default-source/first-steps/banner-3_-sp-top-graduates.jpg?Status=Master&sfvrsn=cdadd06b_1" class="d-block w-100" alt="Picture Of Our Top Graduates From SP">
+          <div class="carousel-caption d-md-block rounded-3 px-3 py-0">
+            <h5 class="mt-3">Transformative Learning Experience</h5>
+            <p>Students share their experiences with the new tech hub and its impact on their learning journey.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+          <img src="https://www.sp.edu.sg/images/default-source/default-album/new-website-homepage-banner-size-1440-x-596px.webp?Status=Master&sfvrsn=425aed18_1" class="d-block w-100" alt="Image of students from SP enjoying the vibrabt student life">
+          <div class="carousel-caption d-md-block rounded-3 px-3 py-0">
+            <h5 class="mt-3">Community Development</h5>
+            <p>How our green campus initiative is positively influencing the local community.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Image taken from SP Facebook (CSIT Scholarship Award Reciepients Post) -->
+          <img src="https://www.sp.edu.sg/images/default-source/eee/csit-scholarship-presentation.jpeg?sfvrsn=f1a2b13f_0" class="d-block w-100" alt="Picture Of Proud CSIT Scholars From SP.">
+          <div class="carousel-caption d-md-block rounded-3 px-3 py-0">
+            <h5 class="mt-3">Cutting-edge Research</h5>
+            <p>Insights from researchers on the latest advancements and breakthroughs.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#impactCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#impactCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Book Section -->
+<section class="bg-danger text-white text-center py-5 rounded-1">
+  <div class="container">
+    <h2 class="display-4 mb-4">For All Ages</h2>
+    <p class="lead mb-4">
+      In celebration of SP's 70th anniversary, we have launched a commemorative book titled ‘For All Ages, Singapore Polytechnic At Seventy’, featuring some of the people and moments that have shaped us through the years.
+    </p>
+    <div class="row justify-content-center align-items-center mb-4">
+      <!-- Video Section -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="ratio ratio-16x9">
+          <!-- Video Embedded From Singapore Polytechnic Youtube Channel -->
+          <iframe src="https://www.youtube.com/embed/CtUFQusXAkI" title="SP 70th Anniversary Commemorative Book Launch" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- Image Section -->
+      <div class="col-md-6">
+        <!-- Image taken from SP70 Website (For All Ages Section) -->
+        <img src="img/sp70-book.jpeg" class="img-fluid rounded-3" alt="For All Ages Book">
+      </div>
+    </div>
+    <p class="lead mb-4">
+      Download the e-book and discover what makes SP a poly ‘For All Ages’.
+    </p>
+    <a href="https://www.sp.edu.sg/docs/default-source/sp70/for-all-ages_sp-at-seventy.pdf" target="_blank" class="btn btn-outline-light btn-lg mx-2">Download PDF</a>
+    <a href="https://www.sp.edu.sg/sp/about-sp/publications/sp70-for-all-ages" target="_blank" class="btn btn-outline-light btn-lg mx-2">Get the EPUB</a>
+  </div>
+</section>  
+<!-- Table Section -->
+<section id="data-table" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4"><span class="text-danger">SP</span>70 Milestones & Achievements</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover rounded-4 mt-3">
+        <thead class="table-light">
+          <tr>
+            <th class="text-danger py-3 px-4">Year</th>
+            <th class="text-danger py-3 px-4">Milestone</th>
+            <th class="text-black py-3 px-4">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-3 px-4">1954</td>
+            <td class="py-3 px-4">Foundation of Singapore Polytechnic</td>
+            <td class="py-3 px-4">Singapore Polytechnic was established as Singapore's first polytechnic, aiming to provide technical education and training.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">1984</td>
+            <td class="py-3 px-4">Expansion of Campus</td>
+            <td class="py-3 px-4">The campus was expanded to include new facilities and academic departments to cater to growing student numbers.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">2004</td>
+            <td class="py-3 px-4">Introduction of New Programs</td>
+            <td class="py-3 px-4">New programs and courses were introduced to align with industry needs and technological advancements.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">2014</td>
+            <td class="py-3 px-4">60th Anniversary Celebrations</td>
+            <td class="py-3 px-4">Singapore Polytechnic celebrated its 60th anniversary with various events and initiatives reflecting on its achievements.</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">2024</td>
+            <td class="py-3 px-4">70th Anniversary Milestones</td>
+            <td class="py-3 px-4">Celebrating 70 years of excellence in education, with new initiatives and global partnerships.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faqs" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item border-0 mb-3 rounded-5 shadow-sm">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            What is Singapore Polytechnic's vision for the future?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Singapore Polytechnic aims to innovate in educational methodologies, promote sustainability, and expand global partnerships to enhance learning and impact.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0 mb-3 rounded-5 shadow-sm">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I get involved with SP70 celebrations?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can participate by attending events, sharing your wishes on our form, or volunteering to help with various activities related to SP70.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0 mb-3 rounded-5 shadow-sm">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Where can I find information about SP70 events?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Information about SP70 events can be found on our official website and social media channels. We regularly update these platforms with event details and schedules.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0 mb-3 rounded-5 shadow-sm">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Can alumni participate in SP70 celebrations?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! We welcome alumni to join in the celebrations, attend events, and reconnect with their peers. Details on how to get involved are available on our website.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0 mb-3 rounded-5 shadow-sm">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            How can I provide feedback or suggestions about SP70?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We value your feedback! You can submit your suggestions through our feedback form available on the website or contact us directly via email.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="bg-light py-3 py-md-5 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+        <div class="col-sm-6 col-xl-3 order-0 order-xl-0">
+          <div class="footer-logo-wrapper text-center text-sm-start">
+            <a href="index.html">
+              <!-- Image taken from Singapore Polytechnic Facebook -->
+              <img src="img/SP-Logo.png" alt="SP Logo" width="175" >
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 order-2 order-xl-1">
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink1" href="https://www.sp.edu.sg/sp/about-sp" target="_blank">
+                  <i class="bi bi-info-circle"></i> About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink2" href="https://www.sp.edu.sg/sp/about-sp/contact-us" target="_blank">
+                  <i class="bi bi-envelope"></i> Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink3" href="https://www.sp.edu.sg/sp/terms-of-use" target="_blank">
+                  <i class="bi bi-file-earmark-text"></i> Terms
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink4" href="https://www.sp.edu.sg/sp/privacy-statement" target="_blank">
+                  <i class="bi bi-shield-lock"></i> Privacy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>     
+        <div class="col-sm-6 col-xl-3 order-1 order-xl-2">
+          <div class="social-media-wrapper">
+            <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
+              <li class="me-3">
+                <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://www.youtube.com/singaporepolytechnic" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://x.com/singaporepoly/" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li class="">
+                <a href="https://www.instagram.com/singaporepoly" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-3 py-md-5 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row">
+        <div class="col">
+          <div class="footer-copyright-wrapper text-center">
+            &copy; 2024. All Rights Reserved.
+          </div>
+          <div class="credits text-secondary text-center mt-2 fs-8">
+            Built by Balamurugan Siddhartha with <span class="text-danger">&#9829;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap JS Link -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

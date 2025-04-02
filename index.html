@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP70 | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.cdnfonts.com/css/urbanist" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="shortcut icon" href="img/SP-Favicon.png" type="image/x-icon" />
+    <script src="JS/index.js"></script>
+  </head>
+  <body>
+<!-- Navbar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/sp-70-logo.png" alt="Logo" height="60" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link active position-relative" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="our-future.html">Our Future</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="form.html">SP70 Wishes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Celebratory Strip -->
+    <div class="celebration-strip text-center py-2">
+      <em>Celebrating Our 70th Anniversary!</em>
+    </div>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="0"  
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner"> 
+    <div class="carousel-item active">
+      <img
+        src="./img/sp70-banner-celebratesp-new.jpg"
+        class="d-block mw-100 img-fluid w-100"
+        alt="SP Open House Banner"
+      />
+    </div>
+    <div class="carousel-item">
+      <img src="img/SP-Carousel-1.jpg" class="d-block mw-100 img-fluid w-100" alt="SP Graduands Banner" />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://www.sp.edu.sg/images/default-source/sp-home-page/spiritlowres.jpg?sfvrsn=e52c5120_0"
+        class="d-block mw-100 img-fluid w-100"
+        alt="SP Students Banner"
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Jumbotron -->
+    <div class="jumbotron text-center py-5">
+      <h1 class="display-6 text-center mt-4" id="welcome-text">
+        <strong>Welcome To Singapore Polytechnic</strong>
+      </h1>
+      <div class="container mt-3 ">
+        <p class="lead" id="welcome-text-subtitle"></p>
+      </div>
+      <p class="lead">
+        <a class="btn btn-lg" id="main-btn" href="#cards-section" role="button">Explore Now</a>
+      </p>
+    </div>
+    
+<!-- Cards -->
+    <section class="cards" id="cards-section">
+      <div class="container py-3">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="img/sp-music.jpg" 
+                class="card-img-top"
+                alt="Card Image"
+              />
+              <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">SP70th Music Festival</h5>
+                <p class="card-text flex-grow-1">
+                  The SP70th Anniversary Music Festival celebrates Singapore Polytechnic's 70 years with diverse musical performances, uniting the community in a vibrant musical celebration.
+                </p>
+                <a href="#" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal1">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="img/polite-staff-appreciation.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
+              <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">POLITE Staff Appreciation Day</h5>
+                <p class="card-text flex-grow-1">
+                  POLITE Staff Appreciation Day honors the invaluable contributions, dedication, and positive impact of Staff Members in the institutions and its community with honor to SP70.
+                </p>
+                <a href="#" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal2">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="img/sp-commemoration.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
+              <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+              <div class="card-body">
+                <h5 class="card-title">SP70 Commemoration Festival</h5>
+                <p class="card-text flex-grow-1">
+                  The SP70 Commemoration Festival is an event marking the 70th anniversary of Singapore's independence. It features celebrations, performances and speeches from guests.
+                </p>
+                <a href="#" class="btn btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#modal3">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">SP70th Music Festival</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/sp-music-modal.jpg"
+              class="img-fluid mb-3 rounded-3"
+              alt="Card Image"
+            />
+            <!-- Image taken from SP Website (SP70 Site) -->
+            <h3><em>SP70th Music Festival: Celebrating 70 Years of Harmony</em></h3>
+            <p>The SP70th Anniversary Music Festival marks Singapore Polytechnic's 70 years of excellence with an extraordinary lineup of diverse musical performances. This vibrant celebration brings the community together, showcasing a rich tapestry of musical talents and creating unforgettable experiences in honor of this significant milestone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">POLITE Staff Appreciation Day</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://www.sp.edu.sg/images/default-source/default-album/staffday4.jpg?sfvrsn=3b546c2_0"
+              class="img-fluid mb-3 rounded-3"
+              alt="Card Image"
+            />
+            <!-- Image taken from SP Website -->
+            <h3><em>POLITE Staff Appreciation Day: Honoring 70 Years of Excellence</em></h3>
+            <p>In celebration of SP70, POLITE Staff Appreciation Day acknowledges the outstanding contributions and dedication of our staff members. Their positive impact on our institutions and community is invaluable, and this day is dedicated to recognizing their commitment and excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">SP70 Commemoration Festival</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/sp-commemoration-modal.jpg"
+              class="img-fluid mb-3 rounded-3"
+              alt="Card Image"
+            />
+            <!-- Image taken from SP70 Website -->
+            <h3><em>SP70 Commemoration Festival: 70 Years of Legacy and Celebration</em></h3>
+            <p>The SP70 Commemoration Festival is an event marking the 70th anniversary of Singapore's independence. It features celebrations, performances, and speeches from guests.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container -->
+    <div class="container py-1">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mt-4 py-3" id="academic-schools-header">Academic Schools</h1>
+        </div>
+        <div class="col-12">
+          <h6 class="text-center mw-70 mx-auto">Explore the wide-range of full-time diploma courses offered by the academic schools of Singapore Polytechnic.</h6>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Schools Section -->
+    <section id="schools-section" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- School of Computing (SoC) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/soc" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (SoC) -->
+              <img src="https://www.sp.edu.sg/images/default-source/default-album/socff503ff9b68d4dcba0f429c064e75d5b.png?sfvrsn=60dd7269_0" class="card-img-top" alt="School of Computing (SoC)">
+              <div class="card-body">
+                <h5 class="card-title">School Of Computing (SoC)</h5>
+                <p class="card-text">At SoC, you’ll develop your skillsets through immersive, hands-on projects to enhance your knowledge and experience, giving you an edge in your field.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Electrical & Electronic Engineering (EEE) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/eee" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken From SP Website (EEE) -->
+              <img src="https://www.sp.edu.sg/images/default-source/spoh2024/eee-(1).png?sfvrsn=eea288b4_0" class="card-img-top" alt="School of Electrical & Electronic Engineering (EEE)">
+              <div class="card-body">
+                <h5 class="card-title">School of Electrical & Electronic Engineering (EEE)</h5>
+                <p class="card-text">The School of Electrical & Electronic Engineering (EEE) has a rich history tracing back to 1957. Today, we are Singapore's largest engineering school.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Architecture & the Built Environment (ABE) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/abe" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image Taken From SP Website (ABE) -->
+              <img src="https://www.sp.edu.sg/images/default-source/spoh2024/abe37e055a43f0a451385b9972762436a33.png?sfvrsn=9fea1084_0" class="card-img-top" alt="School of Architecture & the Built Environment (ABE)">
+              <div class="card-body">
+                <h5 class="card-title">School of Architecture & the Built Environment (ABE)</h5>
+                <p class="card-text">Welcome to the School of Architecture & the Built Environment (ABE), where imagination is your greatest asset. Since 1958, ABE has been a leading institution in architecture and the built environment.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Business (SB) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/sb" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (SB) -->
+              <img src="https://www.sp.edu.sg/images/default-source/default-album/sbe9ff7b3c87e84837933012ea33883e93.png?sfvrsn=7c173398_0" class="card-img-top" alt="School of Business (SB)">
+              <div class="card-body">
+                <h5 class="card-title">School of Business (SB)</h5>
+                <p class="card-text">At the School of Business (SB), we are committed in nurturing you to achieve success in your chosen paths! You have the power to shape your own learning experience.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Chemical & Life Sciences (CLS) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/cls" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (CLS) -->
+              <img src="https://www.sp.edu.sg/images/default-source/default-album/clsc89bf2a3e8ab4a03a785dc719306343e.png?sfvrsn=fc30b89e_0" class="card-img-top" alt="School of Chemical & Life Sciences (CLS)">
+              <div class="card-body">
+                <h5 class="card-title">School of Chemical & Life Sciences (CLS)</h5>
+                <p class="card-text">The School of Chemical & Life Sciences (CLS) has been a vital part of Singapore's industrial transformation and technological advancement.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- Media, Arts & Design School (MAD) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/mad" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (MAD) -->
+              <img src="https://www.sp.edu.sg/images/default-source/mad-school-(jan-2019)/spoh-mad.jpg?sfvrsn=ce08e196_2" class="card-img-top" alt="Media, Arts & Design School (MAD)">
+              <div class="card-body">
+                <h5 class="card-title">Media, Arts & Design School (MAD)</h5>
+                <p class="card-text">Imagine a world where your creative ideas are nurtured, and your talents are honed. The Media, Arts & Design School is where your creative journey begins.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Life Skills & Communication (LSC) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/lsc" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (LSC) -->
+              <img src="https://www.sp.edu.sg/images/default-source/spoh2024/lscda8f25e579b247479ee1cfc496804bd2.png?sfvrsn=6c3d6270_0" class="card-img-top" alt="School of Life Skills & Communication (LSC)">
+              <div class="card-body">
+                <h5 class="card-title">School of Life Skills & Communication (LSC)</h5>
+                <p class="card-text">LSC anchors the foundational modules taken by all SP students. The school is committed to develop critical & creative thinkers, confident communicators and self-directed learners ready for life, work and the world.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Mechanical and Aeronautical Engineering (MAE) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/mae" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (MAE) -->
+              <img src="https://www.sp.edu.sg/images/default-source/mae/mae/school-web-banner_mae.png?sfvrsn=75b6d8a6_0" class="card-img-top" alt="School of Mechanical and Aeronautical Engineering (MAE)">
+              <div class="card-body">
+                <h5 class="card-title">School of Mechanical and Aeronautical Engineering (MAE)</h5>
+                <p class="card-text">The School of Mechanical & Aeronautical Engineering (MAE) traces its roots back to 1958 when the first Technician Diploma in Mechanical Engineering was launched in Singapore.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- School of Mathematics & Science (MS) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/ms" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP website (MS) -->
+              <img src="https://www.sp.edu.sg/images/default-source/default-album/ms.png?sfvrsn=d3609030_0" class="card-img-top" alt="School of Mathematics & Science (MS)">
+              <div class="card-body">
+                <h5 class="card-title">School of Mathematics & Science (MS)</h5>
+                <p class="card-text">MS offers programmes to support students and adult learners to excel in mathematics, analytics, statistics, sciences and IT in engineering, technology and business courses.</p>
+              </div>
+            </a>
+          </div>
+    
+          <!-- Singapore Maritime Academy (SMA) -->
+          <div class="col-md-6 mb-4">
+            <a href="https://www.sp.edu.sg/sma" target="_blank" class="card h-100 text-decoration-none text-dark">
+              <!-- Image taken from SP Website (SMA) -->
+              <img src="https://www.sp.edu.sg/images/default-source/spoh2024/sma-(1).png?sfvrsn=cf08c309_0" class="card-img-top" alt="Singapore Maritime Academy (SMA)">
+              <div class="card-body">
+                <h5 class="card-title">Singapore Maritime Academy (SMA)</h5>
+                <p class="card-text">Embrace the ocean's call and embark on this voyage of learning at the Singapore Maritime Academy (SMA).</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Testimonials Section -->
+<section id="testimonial-section" class="py-5 bg-light">
+  <div class="container">
+    <h2 id="testimonial-header" class="text-center mb-4">Inspiring Success Stories</h2>
+    <div class="row py-4">
+      <div class="col-md-6 mb-4">
+        <div class="testimonial-card mx-auto p-4 rounded-5 text-center mw-600 h-100" id="testimonial-card1">
+          <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+          <img src="img/sp-awardee1.jpg" class="rounded-circle mb-3 img-fluid" alt="Kwang Yu Yeung">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"The DARE course curriculum is comprehensive and versatile. It enabled me to gain admission to NUS Mechanical Engineering and excel in my university studies. I graduated with Honours (Highest Distinction) from NUS and am currently pursuing a Masters Degree at University College London on scholarship."</p>
+            <footer class="blockquote-footer mt-3">Kwang Yu Yeung, <cite title="Source Title">SP DARE Graduate 2023</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="testimonial-card mx-auto p-4 rounded-5 text-center mw-600 h-100" id="testimonial-card2">
+          <!-- Image Taken From https://www.facebook.com/singaporepolytechnic/ (SP Facebook) -->
+          <img src="img/sp-awardee2.jpg" class="rounded-circle mb-3 img-fluid" alt="Emily Wong">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"The DME course curriculum allowed me to obtain credit exemptions for my university studies in Aeronautical Engineering, accelerating my degree completion to 2 years instead of the usual 3. It provided me with a strong engineering foundation and excellence in my university studies."</p>
+            <footer class="blockquote-footer mt-3">Emily Wong, <cite title="Source Title">SP DME Graduate 2023</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Countdown Timer -->
+<section id="countdown-timer" class="py-5 text-center">
+  <div class="container">
+    <h2 class="section-title mb-4">Countdown to SP 70th Anniversary</h2>
+    <div id="timer" class="display-4 p-3 bg-light rounded shadow  text-danger"></div>
+    <hr class="mt-5">
+  </div>
+</section>
+<!-- Confetti Button -->
+<div class="container mb-5 px-5 text-center">
+  <button id="confettiButton" class="btn btn-danger">Celebrate!</button>
+</div>
+<!-- Timeline -->
+<section id="timeline-journey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mb-1">
+        <h2 class="section-title mt-5">Our Journey</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="timeline position-relative mx-auto">
+          <div class="timeline-item rounded-3 position-relative timeline-item-1954 text-white p-4 my-3">
+            <div class="timeline-content position-relative z-1">
+              <h3 class="timeline-title"><em>1954</em></h3>
+              <p class="timeline-text">Singapore Polytechnic was founded.</p>
+            </div>
+          </div>
+          <div class="timeline-item rounded-3 position-relative timeline-item-1970 text-white p-4 my-3">
+            <div class="timeline-content position-relative z-1">
+              <h3 class="timeline-title"><em>1970</em></h3>
+              <p class="timeline-text">Achieved regional accreditation.</p>
+            </div>
+          </div>
+          <div class="timeline-item rounded-3 position-relative timeline-item-2015 text-white p-4 my-3">
+            <div class="timeline-content position-relative z-1">
+              <h3 class="timeline-title"><em>2015</em></h3>
+              <p class="timeline-text">Opened new campus facilities.</p>
+            </div>
+          </div>
+          <div class="timeline-item rounded-3 position-relative timeline-item-future text-white p-4 my-3 mb-5">
+            <div class="timeline-content position-relative z-1">
+              <h3 class="timeline-title"><em>Future</em></h3>
+              <p class="timeline-text">Expanding programs and international collaborations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SP70 Merchandise Section -->
+<section id="merchandise-section" class="py-5 bg-white">
+  <div class="container">
+    <h2 id="merchandise-header" class="text-center mb-4 rounded-4 py-4 bg-danger text-white">Celebrate SP70 with Exclusive Merchandise!</h2>
+    <p class="text-center mb-5">Commemorate Singapore Polytechnic's 70th anniversary with our specially curated merchandise. From stylish apparel to unique collectibles, find the perfect item to celebrate this milestone.</p>
+    <div class="row">
+      <!-- Merchandise Item 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm rounded-5">
+          <img src="img/sp-merch.png" class="card-img-top img-fluid merchandise-img" alt="SP70 T-Shirt">
+          <div class="card-body d-flex flex-column text-center">
+            <div>
+              <h5 class="card-title">SP70 Commemorative T-Shirt</h5>
+              <p class="card-text mb-4">Celebrate SP70 with this exclusive commemorative T-shirt featuring the anniversary logo. Made from high-quality cotton for ultimate comfort.</p>
+            </div>
+            <a href="#" class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#tshirtModal">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Merchandise Item 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm rounded-5">
+          <img src="img/sp-hoodie.png" class="card-img-top img-fluid merchandise-img" alt="SP70 Hoodie">
+          <div class="card-body d-flex flex-column text-center">
+            <div>
+              <h5 class="card-title">SP70 Anniversary Hoodie</h5>
+              <p class="card-text mb-4">Stay cozy and stylish with the SP70 Anniversary Hoodie, featuring a sleek design and soft fabric, perfect for showcasing your SP pride.</p>
+            </div>
+            <a href="#" class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#hoodieModal">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Merchandise Item 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm rounded-5">
+          <img src="img/SP-Cap.png" class="card-img-top img-fluid merchandise-img" alt="SP70 Hat">
+          <div class="card-body d-flex flex-column text-center">
+            <div>
+              <h5 class="card-title">SP70 Limited Edition Hat</h5>
+              <p class="card-text mb-4">This limited edition hat is perfect for showcasing your style and celebrating special moments. It features a unique SP70 design, making it a memorable keepsake.</p>
+            </div>
+            <a href="#" class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#hatModal">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<!-- Modal for T-Shirt -->
+<div class="modal fade" id="tshirtModal" tabindex="-1" aria-labelledby="tshirtModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tshirtModalLabel">SP70 Commemorative T-Shirt</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Image Taken From https://www.instagram.com/singaporepolytechnic/ (SP Instagram) --> 
+        <img src="img/sp-merch.png" class="img-fluid mb-3" alt="SP70 T-Shirt">
+        <p>Celebrate SP70 with this exclusive commemorative T-shirt featuring the anniversary logo. Made from high-quality cotton for ultimate comfort.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Hoodie -->
+<div class="modal fade" id="hoodieModal" tabindex="-1" aria-labelledby="hoodieModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hoodieModalLabel">SP70 Anniversary Hoodie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Design Concept Of Hoodie made by myself using Canva -->
+        <img src="img/sp-hoodie.png" class="img-fluid mb-3" alt="SP70 Hoodie">
+        <p>Stay cozy and stylish with the SP70 Anniversary Hoodie, featuring a sleek design and soft fabric, perfect for showcasing your SP pride.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Hat -->
+<div class="modal fade" id="hatModal" tabindex="-1" aria-labelledby="hatModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hatModalLabel">SP70 Limited Edition Hat</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Design Concept Of Cap made by myself using Canva -->
+        <img src="img/SP-Cap.png" class="img-fluid mb-3" alt="SP70 Hat">
+        <p>This limited edition hat is perfect for showcasing your style and celebrating special moments. It features a unique SP70 design, making it a memorable keepsake.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Quiz -->
+<section id="quiz" class="py-5 text-center">
+  <div class="container">
+    <h2 class="section-title mb-4" id="quiz-intro">Try Out A Quiz!</h2>
+    <div id="intro-container" class="bg-light p-4 rounded shadow">
+      <p>Welcome to the SP Trivia Quiz! Test your knowledge about the history of Singapore Polytechnic.</p>
+      <button id="start-quiz-btn" class="btn btn-outline-danger mt-1">Start Quiz</button>
+    </div>
+    <div id="quiz-container" class="bg-light p-4 rounded shadow" style="display: none;">
+      <div id="question-container" class="mb-4">
+        <h3 id="question" class="mb-4"></h3>
+        <div id="options" class="list-group"></div>
+      </div>
+      <button id="next-btn" class="btn btn-outline-danger mt-3" style="display: none;">Next</button>
+      <div id="result-container" class="mt-4" style="display:none;">
+        <h3 id="result" class="mb-4"></h3>
+        <button id="restart-btn" class="btn btn-secondary">Restart Quiz</button>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="bg-light py-3 py-md-5 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+        <div class="col-sm-6 col-xl-3 order-0 order-xl-0">
+          <div class="footer-logo-wrapper text-center text-sm-start">
+            <a href="#!">
+              <!-- Image taken from SP Website -->
+              <img src="img/SP-Logo.png" alt="SP Logo" width="175" >
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 order-2 order-xl-1">
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink1" href="https://www.sp.edu.sg/sp/about-sp" target="_blank">
+                  <i class="bi bi-info-circle"></i> About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink2" href="https://www.sp.edu.sg/sp/about-sp/contact-us" target="_blank">
+                  <i class="bi bi-envelope"></i> Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink3" href="https://www.sp.edu.sg/sp/terms-of-use" target="_blank">
+                  <i class="bi bi-file-earmark-text"></i> Terms
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-secondary" id="footerlink4" href="https://www.sp.edu.sg/sp/privacy-statement" target="_blank">
+                  <i class="bi bi-shield-lock"></i> Privacy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>     
+        <div class="col-sm-6 col-xl-3 order-1 order-xl-2">
+          <div class="social-media-wrapper">
+            <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
+              <li class="me-3">
+                <a href="https://www.facebook.com/singaporepolytechnic/" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://www.youtube.com/singaporepolytechnic" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="https://x.com/singaporepoly/" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li class="">
+                <a href="https://www.instagram.com/singaporepoly" target="_blank" class="link-dark link-opacity-75-hover">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-3 py-md-5 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row">
+        <div class="col">
+          <div class="footer-copyright-wrapper text-center">
+            &copy; 2024. All Rights Reserved.
+          </div>
+          <div class="credits text-secondary text-center mt-2 fs-8">
+            Built by Balamurugan Siddhartha with <span class="text-danger">&#9829;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- Bootstrap JS Link -->
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
